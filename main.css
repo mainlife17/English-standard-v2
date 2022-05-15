@@ -113,6 +113,7 @@
     justify-content: center;
     background-color: rgba(255, 255, 0, 0.397);
     padding: 40px;
+    width: 100%;
   }
   
   @media screen and (max-width: 400px) {
@@ -174,7 +175,7 @@
     display: flex;
   }
   
-  
+ 
   @media screen and (max-width: 1232px){
     .scores{
   grid-template-columns: repeat(2, 1fr);
@@ -273,3 +274,34 @@
       display: block;
       }
    }
+   .head_wrapper{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       justify-content: space-around;
+   }
+   .link a{
+       text-align: center;
+       text-decoration: none;
+       overflow: none;
+       color: blueviolet;
+       font-size: 30px;
+   } 
+   @media screen and (max-width: 950px){
+    .head_wrapper{
+        flex-direction: column;
+    }
+    .link-2{
+        display: none;
+    }
+    header{
+        height: 160px;
+    }
+  }
+  .link-2 a{
+    text-align: center;
+    text-decoration: none;
+    overflow: none;
+    color: blueviolet;
+    font-size: 30px;
+} 
